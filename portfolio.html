@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/package/swiper-bundle.min.css">
+</head>
+<body>
+ 
+ <!-- About Me Section -->
+<section class="about-me-section">
+    <div class="container_01">
+        <!-- Left Section: Image -->
+        <div class="about-image">
+            <img src="./assets/image/sample_img.jpg" alt="Tamil Selvan">
+        </div>
+
+        <!-- Right Section: Content -->
+        <div class="about-content">
+            <h2 class="title_01">About Me</h2>
+            <p class="description">
+                Hi, I'm <strong>Tamil Selvan</strong>. I'm a passionate web developer specializing in modern web technologies.
+                I love creating clean, interactive, and user-friendly web applications.
+            </p>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">Css</div>
+                <div class="skill">Javascript</div>
+                <div class="skill">React</div>
+                <div class="skill">Php</div>
+                <div class="skill">Laravel</div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-details">
+                <a id="instagram" href="#" target="_blank" class="contact-icon"><i class="fab fa-instagram"></i></a>
+                <a id="whatsapp" href="#" target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                <a id="phone" href="#" class="contact-icon"><i class="fas fa-phone"></i></a>
+                <a id="github" href="#" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
+                <a id="email" href="#" class="contact-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+     <!-- Extra Content Section (Scroll to Reveal) -->
+     <section class="extra-content">
+        <div class="content-wrapper">
+            <h2>WHAT I DO</h2>
+            <p>I create websites and applications that are fast, user-friendly, and responsive. I specialize in front-end development and have a basic understanding of back-end development, ensuring everything looks great and works smoothly.</p>
+            <p>Currently, I work at Skyhost as a Frontend Developer.</p>
+        </div>
+        <!-- Sword Elements -->
+    <div class="sword left"></div>
+    <div class="sword right"></div>
+    </section>
+
+    <!-- Extra Content Section (Scroll to Reveal) -->
+    <section class="extra-content_1">
+        <div class="content-wrapper_1">
+            <h2>MY CAREER AND EXPERIENCE</h2>
+            <p>Developed and maintained multiple web applications using React, Laravel, and PHP.</p>
+            <p>Implemented responsive UI designs for improved user experience across devices.</p>
+            <p>Integrated APIs using Axios and Fetch to enhance data communication.</p>
+        </div>
+          <!-- Ball Animation -->
+          <div class="ball"></div>
+    </section>
+
+
+
+
+    <!-- My Work Section -->
+<section class="my-work">
+    <div class="container">
+        <h2 class="section-title">MY WORK</h2>
+        <p class="section-description">Here are some of the projects I’ve worked on, showcasing my skills and experience in web development.</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./assets/image/bg.743694aa8ac245238055.png" alt="Project 1">
+                <div class="project-info">
+                    <h3><a href="https://www.tamizhmanamaalai.com">Tamizhmanamaalai</a></h3>
+                    <p>A matrimony website helps people find their perfect life partner. It allows users to create profiles, search for matches, and connect with potential partners based on their preferences, such as age, religion, caste, profession, and interests. The website ensures a secure and user-friendly experience, making matchmaking easy and convenient.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/image/122.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3><a href="https://jagpropertyadvisory.com.au">Jag Property</a></h3>
+                    <p>Looking to buy a property? Our advisory website offers expert recommendations, detailed property listings, and market insights to help you make the right choice. Whether it’s a dream home or a smart investment, we guide you every step of the way, ensuring a hassle-free and secure property buying experience..</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/image/Untitled design.png" alt="Project 3">
+                <div class="project-info">
+                    <h3><a href="https://hrms.skyhost.co.in">Kalakarni HRMS</a></h3>
+                    <p>An HRMS website helps businesses manage their employees efficiently. It provides tools for payroll, attendance tracking, leave management, recruitment, and performance evaluation. With a centralized system, companies can automate HR tasks, improve productivity, and ensure smooth workforce management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="clash_container">
+        <!-- Background Video -->
+        <video playsinline autoplay muted loop  id="bgvid">
+            <source src="/assets/video/videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <!-- Player Name -->
+         <div class="player_details">
+        <h3 class="clash_name">Name: <span id="playerName"></span></h3>
+        <h3 class="clash_name">Towwn Hall Level: <span id="Townhalllevel"></span></h3>
+        <h3 class="clash_name">Trophies: <span id="Trophies"></span></h3>
+        <h3 class="clash_name">Builder Base Trophies:<span id="builder_base_trophies"></span> </h3>
+        <h3 class="clash_name">War star:<span id="war_star"></span></h3>
+    </div>
+
+        <!-- Hero Images Section -->
+        <div class="heroes">
+            <div class="hero">
+                <img id="hero1" src="./assets/image/heros_image/resize-173893007662161446572c08dd30d25c5e983f05064ac290930-removebg-preview.png" alt="Hero 1">
+                <p class="heros_name" id="heros_name11"></p>
+                <p class="hero_level" id="heroLevel1"></p>
+            </div>
+            <div class="hero">
+                <img id="hero2" src="./assets/image/heros_image/resize-1738926964174794305wizardhero-removebg-preview.png" alt="Hero 2">
+                <p class="heros_name" id="heros_name12"></p>
+                <p class="hero_level" id="heroLevel2"></p>
+            </div>
+            <div class="hero">
+                <img id="hero3" src="/assets/image/heros_image/resize-1738926987946846113royalchampionheroremovebgpreview__1_-removebg-preview.png" alt="Hero 3">
+                <p class="heros_name" id="heros_name13"></p>
+                <p class="hero_level" id="heroLevel3"></p>
+            </div>
+            <div class="hero">
+                <img id="hero4" src="/assets/image/heros_image/resize-173892665655442267584d91f4367b6a13e54477f3-removebg-preview.png" alt="Hero 4">
+                <p class="heros_name" id="heros_name14"></p>
+                <p class="hero_level" id="heroLevel4"></p>
+            </div>
+
+            <div class="hero">
+                <img id="hero5" src="/assets/image/heros_image/New-Hero-Minion-Prince-removebg-preview.png" alt="Hero 4">
+                <p class="heros_name" id="heros_name15"></p>
+                <p class="hero_level" id="heroLevel5"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+   <!-- Include Swiper JS -->
+     <script src="./assets/package/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- FontAwesome Icons (for social media) -->
+
+    <script>
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "fade", // Smooth fade effect
+    speed: 1000, // Transition speed
+  });
+        
+        // GSAP Animations
+        gsap.from(".about-image img", { opacity: 0, x: -100, duration: 1.5, ease: "power3.out" });
+        gsap.from(".about-content", { opacity: 0, x: 100, duration: 1.5, ease: "power3.out", delay: 0.3 });
+        gsap.from(".skill", { opacity: 0, y: 20, stagger: 0.2, duration: 1, ease: "back.out(1.7)", delay: 0.8 });
+        gsap.from("#contact_animation", { opacity: 0, y: 20, stagger: 0.2, duration: 1, ease: "back.out(1.7)", delay: 0.8 });
+        /*gsap.from("#whatsapp","#phone","#github","#email",{ opacity: 0, y: 20, stagger: 0.2, duration: 1, ease: "back.out(1.7)", delay: 0.8 });*/
+
+
+        gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".extra-content", {
+    visibility: "visible", /* Makes section visible */
+    duration: 0
+});
+
+gsap.to(".content-wrapper", {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".extra-content",
+        start: "top 80%", // Triggers when section is 80% in view
+        toggleActions: "play none none none"
+    }
+});
+
+// Extra Text Animation for Professional Look
+gsap.from(".content-wrapper h2", {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".content-wrapper",
+        start: "top 85%",
+    }
+});
+
+gsap.from(".content-wrapper p", {
+    opacity: 0,
+    y: 30,
+    stagger: 0.3, /* Each paragraph appears one after another */
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".content-wrapper",
+        start: "top 85%",
+    }
+});
+
+ // Sword Animation (Left & Right Swords)
+gsap.to(".sword", {
+    y: "100vh", // Moves swords from top to bottom
+    opacity: 1,
+    duration: 3,
+    ease: "power2.out",
+    stagger: 0.2, // Adds stagger for each sword
+    scrollTrigger: {
+        trigger: ".extra-content",
+        start: "top 80%",
+        // markers:true,
+        toggleActions: "restart pause reverse pause"
+    }
+});
+
+
+ // Ball Animation
+ gsap.to(".ball", {
+            x: "99vw", // Move ball to the right side of the screen
+            duration: 3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".extra-content_1",
+                start: "top 75%",  // Trigger when the section is 75% in view
+                // markers:true,
+                toggleActions: "restart pause reverse pause"
+            }
+        });
+
+        // Content Reveal Animation
+        gsap.to(".content-wrapper_1", {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".extra-content_1",
+                start: "top 80%", // Triggers when section is 80% in view
+                toggleActions: "play none none none"
+            }
+        });
+
+        // Text Animation for Header (h2)
+        gsap.to(".extra-content_1 h2", {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".extra-content_1",
+                start: "top 85%",
+                toggleActions: "play none none none"
+            }
+        });
+
+        // Text Animation for Paragraphs (p)
+        gsap.to(".extra-content_1 p", {
+            opacity: 1,
+            y: 0,
+            stagger: 0.2,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".extra-content_1",
+                start: "top 85%",
+                toggleActions: "play none none none"
+            }
+        });
+
+
+        // Animate the "My Work" section when it's in view
+// Animate the entire section when it scrolls into view
+gsap.to(".my-work-section", {
+    opacity: 1,  // Fade in the section
+    x: "0",  // Move the section to the right (from -100vw to 0)
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".my-work-section",  // Section that triggers the animation
+        start: "top 80%",  // Starts when the section is 80% in view
+        toggleActions: "play none none none"  // Play the animation once when in view
+    }
+});
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    fetch("http://localhost:5000/clashofclans/%23LR9YOJRCO")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); // Debugging: Check API response
+
+            // Set Player Name
+            document.getElementById("playerName").innerText = data.name;
+            document.getElementById('Townhalllevel').innerText=data.townHallLevel;
+            document.getElementById('Trophies').innerText=data.trophies;
+            document.getElementById('builder_base_trophies').innerText=data.builderBaseTrophies;
+            document.getElementById('war_star').innerText=data.warStars;
+
+            // Heroes Data (Assuming API response has a heroes array)
+            let heroes = data.heroes; // Expecting an array of hero objects
+
+            if (heroes.length >= 5) {
+                // document.getElementById("hero1").src = heroes[0].image;
+                document.getElementById('heros_name11').innerText=heroes[1].name
+                document.getElementById("heroLevel1").innerText = `Level: ${heroes[1].level}`;
+
+                // document.getElementById("hero2").src = heroes[1].image;
+                document.getElementById('heros_name12').innerText=heroes[2].name
+                document.getElementById("heroLevel2").innerText = `Level: ${heroes[2].level}`;
+
+                // document.getElementById("hero3").src = heroes[2].image;
+                document.getElementById('heros_name13').innerText=heroes[4].name
+                document.getElementById("heroLevel3").innerText = `Level: ${heroes[4].level}`;
+
+                // document.getElementById("hero4").src = heroes[3].image;
+                document.getElementById('heros_name14').innerText=heroes[0].name
+                document.getElementById("heroLevel4").innerText = `Level: ${heroes[0].level}`;
+
+                document.getElementById('heros_name15').innerText=heroes[6].name
+                document.getElementById("heroLevel5").innerText = `Level: ${heroes[6].level}`;
+            }
+        })
+        .catch(error => console.error("Error fetching data:", error));
+});
+
+
+
+// Encode the URLs or phone numbers (Base64 encoding)
+const encodedInstagram = btoa('https://instagram.com/tamil_rockerz__');
+const encodedWhatsapp = btoa('https://wa.me/918056340159');  // Replace with actual number
+const encodedPhone = btoa('tel:+918056340159');  // Replace with actual number
+const encodedGithub = btoa('https://github.com/dashboard');
+const encodedEmail = btoa('mailto:tamilselvansai8@gmail.com');
+
+// Function to set the href dynamically
+function setLinks() {
+    document.getElementById('instagram').href = atob(encodedInstagram);
+    document.getElementById('whatsapp').href = atob(encodedWhatsapp);
+    document.getElementById('phone').href = atob(encodedPhone);
+    document.getElementById('github').href = atob(encodedGithub);
+    document.getElementById('email').href = atob(encodedEmail);
+}
+
+// Set the links when the page loads
+window.onload = setLinks;
+
+  
+    </script>
+
+</body>
+</html>
